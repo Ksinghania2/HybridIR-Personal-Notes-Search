@@ -1,37 +1,35 @@
 # HybridIR-Personal-Notes-Search
 
-Hybrid information retrieval for searching personal notes.
+A learning project about searching through personal notes.
 
-## Overview
-This project implements hybrid search techniques combining keyword-based and semantic search for personal note retrieval. It helps you find information across your personal knowledge base.
+## What It Does
+This project helps you find information you've saved in your notes.
 
-## Features
-- Hybrid search (keyword + semantic)
-- Personal knowledge management
-- Semantic search using embeddings
-- Fast keyword retrieval
-- Note organization and tagging
-
-## Installation
+## Basic Usage
 ```python
-pip install -r requirements.txt
+# Simple search
+from noteseacher import NoteFinder
+finder = NoteFinder()
+finder.add_note("math", "Algebra formulas")
+finder.add_note("science", "Physics laws")
+results =finder.search("Algebra")
+print(results)  # Shows the math note
 ```
 
-## Usage
-```python
-from hybridir import NoteSearcher
-searcher = NoteSearcher()
-searcher.add_note('title', 'content')
-results = searcher.search('query')
-```
+## How It Works
+1. Save notes with tags
+2. Search by keywords
+3. Find the notes you want
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Learn More
+- Search online for "Python note searching"
+- Add your own notes
+- Try different search terms
 
-## Topics
-- hybrid-search
-- information-retrieval
-- personal-knowledge-management
-- search
-- semantic-search
-```
+## Concepts
+- Keyword matching
+- Note organization
+- Search results
+
+## Author
+Learning project
